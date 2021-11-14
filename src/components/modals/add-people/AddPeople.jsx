@@ -54,7 +54,10 @@ function AddPeople(props) {
         keyboard={false}
       >
         <Modal.Header>
-          <Modal.Title id="contained-modal-title-vcenter" className="fw-bold">
+          <Modal.Title
+            id="contained-modal-title-vcenter"
+            className="fw-bold mx-4"
+          >
             ADD YOUR PEOPLE
           </Modal.Title>
           <Button variant="link" onClick={handleClose}>

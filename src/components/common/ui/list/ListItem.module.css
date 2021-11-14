@@ -1,4 +1,8 @@
 .customcheck {
-  background-image: url("../../../../assets/custom-checkbox.svg");
-  background: #ffffff;
+  background: #ffffff !important;
+  border: 3px solid black !important;
+}
+
+span {
+  background-color: #ffffff;
 }

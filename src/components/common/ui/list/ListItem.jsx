@@ -1,22 +1,23 @@
-import { InputGroup, Row, Col } from "react-bootstrap";
+import { Row, Col, Form } from "react-bootstrap";
 import classes from "./ListItem.module.css";
 
 function ListItem(props) {
   return (
-    <InputGroup className="border-bottom border-3 border-dark mb-3">
-      <InputGroup.Checkbox
-        className={classes.customcheck}
-        aria-label="Checkbox for following text input"
-      />
-      <Row>
-        <Col>
-          <InputGroup.Text>{props.name}</InputGroup.Text>
+    <Form className="border-bottom border-3 border-dark mb-3">
+      <Row className="align-items-center">
+        <Col xs={2}>
+          <Form.Check aria-label="option 1" />
         </Col>
-        <Col>
-          <InputGroup.Text>{props.phoneNumber}</InputGroup.Text>
+        <Col xs={6}>
+          <Form.Label className="bg-transparent border-0 fw-bold">
+            {props.name}
+          </Form.Label>
+          <Form.Label className="text-secondary bg-transparent border-0">
+            {props.phoneNumber}
+          </Form.Label>
         </Col>
       </Row>
-    </InputGroup>
+    </Form>
   );
 }
 
