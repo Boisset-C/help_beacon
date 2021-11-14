@@ -1,4 +1,4 @@
-import { Container, Button, Row, Col, Image } from "react-bootstrap";
+import { Container, Button, Row, Col } from "react-bootstrap";
 import NavBarSection from "../../components/common/navbar/NavBarSection";
 import Beacon from "../../components/common/beacon/Beacon";
 import AddPeople from "../../components/add-people/AddPeople";
