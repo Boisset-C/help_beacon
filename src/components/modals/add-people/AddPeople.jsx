@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Button, Modal, Image } from "react-bootstrap";
-import PersonIcon from "../../assets/person-icon.svg";
-import CloseIcon from "../../assets/close.svg";
+import PersonIcon from "../../../assets/person-icon.svg";
+import CloseIcon from "../../../assets/close.svg";
 
-function AddPeople() {
+function AddPeople(props) {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -17,13 +17,18 @@ function AddPeople() {
       </Button>
 
       <Modal
+        {...props}
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
         show={show}
         onHide={handleClose}
         backdrop="static"
         keyboard={false}
       >
         <Modal.Header>
-          <Modal.Title className="fw-bold">ADD YOUR PEOPLE</Modal.Title>
+          <Modal.Title id="contained-modal-title-vcenter" className="fw-bold">
+            ADD YOUR PEOPLE
+          </Modal.Title>
           <Button variant="link" onClick={handleClose}>
             <Image src={CloseIcon} alt="a close button" />
           </Button>
@@ -33,10 +38,10 @@ function AddPeople() {
           escape key.
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
+          <Button variant="outline-dark" onClick={handleClose}>
+            CANCEL
           </Button>
-          <Button variant="primary">Understood</Button>
+          <Button variant="dark">ADD</Button>
         </Modal.Footer>
       </Modal>
     </>

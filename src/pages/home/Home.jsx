@@ -1,7 +1,8 @@
-import { Container, Button, Row, Col } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import NavBarSection from "../../components/common/navbar/NavBarSection";
 import Beacon from "../../components/common/beacon/Beacon";
-import AddPeople from "../../components/add-people/AddPeople";
+import AddPeople from "../../components/modals/add-people/AddPeople";
+import ViewPeople from "../../components/modals/view-people/ViewPeople";
 
 import classes from "./Home.module.css";
 
@@ -20,7 +21,7 @@ function Home() {
         <Row className="align-items-end h-25">
           <Col className="d-grid gap-2">
             <AddPeople />
-            <Button variant="outline-dark">VIEW YOUR SUPPORT SYSTEM</Button>
+            <ViewPeople />
           </Col>
         </Row>
       </Container>

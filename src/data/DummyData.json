@@ -1,0 +1,32 @@
+{
+  "Contacts": [
+    {
+      "name": "Jenny Wilson",
+      "phoneNumber": "(406) 555-0120"
+    },
+    {
+      "name": "Marvin McKinney",
+      "phoneNumber": "(907) 555-0101"
+    },
+    {
+      "name": "Savannah Nguyen",
+      "phoneNumber": "(307) 555-0133"
+    },
+    {
+      "name": "Arlene McCoy",
+      "phoneNumber": "(239) 555-0109"
+    },
+    {
+      "name": "Cody Fisher",
+      "phoneNumber": "(208) 555-0112"
+    },
+    {
+      "name": "Dianne Russel",
+      "phoneNumber": "(208) 555-0112"
+    },
+    {
+      "name": "Jacob Jones",
+      "phoneNumber": "(307) 545-0123"
+    }
+  ]
+}
