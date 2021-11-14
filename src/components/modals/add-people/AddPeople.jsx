@@ -3,11 +3,13 @@ import { Button, Modal, Image } from "react-bootstrap";
 import PersonIcon from "../../../assets/person-icon.svg";
 import CloseIcon from "../../../assets/close.svg";
 import ListItem from "../../../components/common/ui/list/ListItem";
+import classes from "./AddPeople.module.css";
 
 function AddPeople(props) {
   const [show, setShow] = useState(false);
   const [contacts, setContact] = useState([
     {
+      id: "0",
       name: "Empty",
       phoneNumber: "(666) 666-6666",
     },
@@ -16,15 +18,22 @@ function AddPeople(props) {
   const handleShow = () => setShow(true);
 
   useEffect(() => {
-    fetch("public/dummydata.json", {
+    fetch("dummydata.json", {
       method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
     })
       .then((r) => {
         return r.json();
       })
       .then((j) => {
         console.log(j);
-        setContact(j.data);
+        return j.info;
+      })
+      .then((i) => {
+        console.log(i);
+        setContact(i);
       });
   }, []);
 
@@ -55,7 +64,7 @@ function AddPeople(props) {
         <Modal.Body>
           <ul>
             {contacts.map((c) => (
-              <li key={c.id}>
+              <li key={c.id} className={classes.list}>
                 <ListItem name={c.name} phoneNumber={c.phoneNumber} />
               </li>
             ))}
