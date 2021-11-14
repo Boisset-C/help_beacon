@@ -1,7 +1,8 @@
 import { Container, Button, Row, Col, Image } from "react-bootstrap";
 import NavBarSection from "../../components/common/navbar/NavBarSection";
 import Beacon from "../../components/common/beacon/Beacon";
-import PersonIcon from "../../assets/person-icon.svg";
+import AddPeople from "../../components/add-people/AddPeople";
+
 import classes from "./Home.module.css";
 
 function Home() {
@@ -18,10 +19,7 @@ function Home() {
         </Row>
         <Row className="align-items-end h-25">
           <Col className="d-grid gap-2">
-            <Button variant="dark">
-              <Image className="px-2" src={PersonIcon} alt="person icon" />
-              ADD YOUR PEOPLE
-            </Button>
+            <AddPeople />
             <Button variant="outline-dark">VIEW YOUR SUPPORT SYSTEM</Button>
           </Col>
         </Row>
