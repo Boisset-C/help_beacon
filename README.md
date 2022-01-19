@@ -2,11 +2,11 @@ A website made for the Author of Geriatric Notes.
 
 DESKTOP VIEW:
 
-![image](assets/home.png)
+![image](src/assets/home.png)
 
 MOBILE VIEW:
 
-![image](assets/support.png)
+![image](src/assets/support.png)
 
 # Getting Started with Create React App
 
