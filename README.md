@@ -1,5 +1,3 @@
-A website made for the Author of Geriatric Notes.
-
 DESKTOP VIEW:
 
 ![image](src/assets/home.png)
