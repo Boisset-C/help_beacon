@@ -1,3 +1,13 @@
+A website made for the Author of Geriatric Notes.
+
+DESKTOP VIEW:
+
+![image](assets/home.png)
+
+MOBILE VIEW:
+
+![image](assets/support.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
